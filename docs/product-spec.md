@@ -1,0 +1,2 @@
+# VxMail Product Spec
+
