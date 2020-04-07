@@ -29,7 +29,7 @@ A number of small and some medium-sized counties have a sufficiently
 manual process for a relatively small number of vote-by-mail ballots
 today. COVID-19 will cause, for them, a shift to vote-by-mail, with 10
 times more ballots, which makes the manual process no longer
-practical&mdash;because of insufficient speed and accuracy. With
+practical—because of insufficient speed and accuracy. With
 simple COTS hardware and software, we can enable 3 election staffers
 to handle 50,000 vote-by-mail ballots assuming at least 4 weeks for
 sending out ballots prior to election day and 2 weeks for tabulation.
