@@ -2,8 +2,8 @@
 
 ## Background & Motivation
 
-The COVID-19 pandemic presents a significant challenge to the US
-General Election of 2020. How can we safely hold elections when it may
+The COVID-19 pandemic presents a significant challenge to the 2020
+General Election in the United States. How can we safely hold elections when it may
 be unsafe to congregate in a typical precinct? There is an emerging
 consensus that one important solution will be the expansion of
 vote-by-mail.
