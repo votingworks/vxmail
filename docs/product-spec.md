@@ -42,7 +42,10 @@ VxMail includes:
 * tools to efficiently open envelopes and extract ballots.
 * a Ballot Scanning System (BSS) to scan and tabulate ballots.
 
-### Ballot Printing & Mailing
+Only the MBMS is online for connecting with print&mail services, while
+the other systems are offline for security purposes.
+
+### Mail Ballot Management System: printing & mailing ballots
 
 VxMail includes a _Mail Ballot Management System (MBMS)_ where an
 election official can:
@@ -52,11 +55,12 @@ election official can:
 * proof ballots
 * order ballots to be printed and mailed
 * track ballot delivery to voters.
+* track ballot return from voters.
 
 All ballot printing, stuffing, and mailing is automated. Voters
 receives a ballot and return envelope, including a signature box.
 
-### Signature Verification
+### Signature Verification System
 
 When ballots are received, VxMail lets election officials verify
 signatures as follows:
@@ -71,16 +75,16 @@ Depending on the size of the county, an off-the-shelf automated
 envelope opener can be used. Alternatively, a simple envelope cutter
 is most cost-effective for smaller counties.
 
-### Ballot Scanning and Tabulation
+### Ballot Scanning System
 
-Extracted ballots are tabulated via the VxMark Ballot Scanning System
+Extracted ballots are tabulated via the VxMail Ballot Scanning System
 (BSS). Three scanner models are available depending on the county size:
 
 * small: up to 10,000 ballot pages per day, in batches of 50, each batch taking 1 minute to scan.
 * medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
 * large: up to 120,000 ballot pages per day, in batches of 500, each batch taking 3.5 minutes to scan.
 
-The VxMark BSS then produces a set of CVRs, which can also be tabulated.
+The BSS then produces a set of CVRs, which can also be tabulated.
 
 ## Future Components Under Consideration
 
@@ -97,4 +101,4 @@ Our rough estimate of complete equipment system cost is:
 * Medium: $7,000
 * Large: $15,000
 
-Plus, for ballot printing and mailing: $2.50 per voter.
+Plus, for ballot printing and mailing: $2.50 per voter, not including return postage.
