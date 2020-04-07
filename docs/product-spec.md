@@ -75,6 +75,13 @@ envelope scanner:
   including digital images for both sides of the corresponding ballot
   envelopes. These can then be upload into the state voter management
   system to record that those voters have cast a ballot.
+  
+If the integration with the state's voter IDs and signature files is
+not an option, election officials may instead use their existing
+Election Management System and look up voter records as ballot
+envelopes come in, either by scanning a voter ID barcode that appears
+on the ballot return envelope, or by manually looking up the voter
+record.
 
 ### Opening envelopes and extracting ballots
 
