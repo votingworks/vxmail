@@ -142,4 +142,4 @@ Our rough estimate of complete equipment system cost is:
 * Medium: $7,000
 * Large: $15,000
 
-Plus, for ballot printing and mailing: $1.75 per voter, not including return postage.
+Plus, for ballot printing and mailing: $2.00 per voter, *including return postage*.
