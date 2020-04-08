@@ -109,7 +109,7 @@ models are available depending on the county size:
 The VxMail Tabulator produces a set of cast vote records (CVRs) and a
 tally of those CVRs.
 
-### Pollbook Reconciliation
+### Ballot Reconciliation
 
 Election officials can use VxMail to ensure that each voter casts no
 more than one ballot. The VxMail Ballot Manager tracks the list of
