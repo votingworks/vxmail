@@ -10,26 +10,29 @@ vote-by-mail.
 
 ## Key Hypothesis
 
-Today, many small and some medium-sized counties have a sufficiently
-manual process for a relatively small number of vote-by-mail
-ballots. COVID-19 will require those counties to process 10 times more
-ballots, making the manual process no longer practical—because of
-insufficient speed and accuracy. With simple, readily available
-off-the-shelf hardware and robust software, we can enable 3 election
-staffers to handle 50,000 vote-by-mail ballots assuming at least 4
-weeks for sending out ballots prior to election day and 2 weeks for
-tabulation.
+Today, many small and some medium-sized election jurisdictions
+(counties, towns, parishes, ...) have a manual process for handling a
+relatively small number of vote-by-mail ballots. COVID-19 will require
+those jurisdictions to process many more mail ballots than they're
+accustomed to. Given limited time and people-power, the manual
+processes will be impractical.
+
+By offering simple, readily available, off-the-shelf hardware and
+robust software, we can enable 3 election staffers to manage mailing
+and receiving 50,000 ballots.
 
 
 ## VxMail
 
-We propose VxMail, a set of tools to help small counties quickly scale
+We propose VxMail, a set of tools to help small jurisdictions quickly scale
 up their vote-by-mail capacity.
 
 ### Components
 
 VxMail includes:
-* a Ballot Manager to send mail ballots to voters, log receipt of those ballots, and verify signatures.
+* a Ballot Manager to create and proof mail ballots, schedule printing
+  and mailing, log receipt of returned ballots, and verify voter
+  signatures.
 * tools to efficiently open envelopes and extract ballots.
 * a Ballot Tabulator to scan and tabulate ballots.
 
@@ -42,11 +45,11 @@ System. The Ballot Tabulator is offline for security purposes.
 The VxMail Ballot Manager lets an election official:
 
 * upload the election definition
-* upload the voter mailing list
 * proof generated ballots on screen
-* order those ballots printed and mailed, with a 3-day in-USPS-hands SLA
+* upload the voter mailing list (name, mailing address, voter ID, ballot style)
+* order those ballots printed and mailed, with a 3-day mailing turnaround.
 * track ballot delivery to voters
-* track ballot return from voters.
+* track ballot return from voters
 
 All ballot printing, stuffing, and mailing is managed by VotingWorks
 and its partners, while election officials can track that process via
@@ -61,7 +64,8 @@ envelope signatures using the VxMail Ballot Manager, which includes an
 envelope scanner:
 
 * An export of voter IDs and signatures, provided by the state, is
-  loaded into the VxMail Ballot Manager.
+  loaded into the VxMail Ballot Manager prior to the election and
+  updated as necessary.
 * Ballot envelopes are scanned into the Ballot Manager in small
   batches. On screen, expected and actual signatures are displayed for
   confirmation by election officials. If election officials detect any
@@ -69,26 +73,28 @@ envelope scanner:
   corresponding button, and the scanning process pauses while election
   officials locate and set aside that ballot envelope. VxMail records
   digitally that this envelope was rejected. Scanning ballot envelopes
-  continues, one small batch at a time.
+  continues, one small batch at a time, and rejected envelopes can be
+  further adjudicated as necessary.
 * When all ballots have been scanned, the VxMail Ballot Manager
-  produces an export of successful and unsuccessful voter IDs,
-  including digital images for both sides of the corresponding ballot
-  envelopes. These can then be uploaded into the state voter management
-  system to record that those voters have cast a ballot.
+  produces an export of all ballots received, along with accepted and
+  rejected voter signatures, including digital images for both sides
+  of the corresponding ballot envelopes. These can then be uploaded
+  into the state voter management system to record that those voters
+  have cast a ballot.
   
-If the integration with the state's voter IDs and signature files is
-not an option, election officials may instead use their existing
-Election Management System and look up voter records as ballot
-envelopes come in, either by scanning a voter ID barcode that appears
-on the ballot return envelope, or by manually looking up the voter
-record.
+If integration with the state's Election Management System is not an
+option, election officials may instead use their existing Election
+Management System and look up voter records as ballot envelopes come
+in, either by scanning a voter ID barcode that appears on the ballot
+return envelope, or by manually looking up the voter record.
 
 ### Opening envelopes and extracting ballots
 
-Depending larger counties, VxMail includes an off-the-shelf automatic
+For larger jurisdictions, VxMail includes an off-the-shelf automatic
 envelope opener and letter extractor, reducing the personnel needed
-for opening ballots. For smaller counties, VxMail includes an
-affordable automatic letter opener.
+for opening envelopes and extracting ballots. For smaller
+jurisdictions, VxMail includes an affordable automatic letter opener,
+and ballots are extracted manually.
 
 ### Scanning and tabulating ballots
 
@@ -100,32 +106,33 @@ models are available depending on the county size:
 * medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
 * large: up to 120,000 ballot pages per day, in batches of 500, each batch taking 3.5 minutes to scan.
 
-The VxMail Tabulator produces a set of CVRs and a tally of those CVRs.
+The VxMail Tabulator produces a set of cast vote records (CVRs) and a
+tally of those CVRs.
 
-### Maintaining an accurate pollbook
+### Pollbook Reconciliation
 
 Election officials can use VxMail to ensure that each voter casts no
-more than one ballot. At the very least, the VxMail Ballot Manager's
-list of voters who have cast a ballot, when reconciled against the
-State voter registration system, will flag any voter that may have
-cast a ballot both in person and by mail. Election officials that want
-stronger protection have a choice of two options:
+more than one ballot. The VxMail Ballot Manager tracks the list of
+voters who have cast a ballot, which can then be reconciled against
+the state voter registration system to flag any voter that may have
+cast a ballot both in person and by mail. Election officials have a
+choice of two options:
 
 - connecting the VxMail Ballot Manager to the State Election
-  Management System for live information on which voters have voted in
-  person.
+  Management System for live information on which voters have alreay
+  voted.
   
 - reconciling the VxMail Ballot Manager received-ballot list with the
   Election Management System on a nightly basis, leaving ballot
   envelopes unopened until the next day once those voters have been
-  confirmed not to have voted.
+  confirmed not to have voted by other means.
 
 ## Future Components Under Consideration
 
-VxMail may include additional components based on the needs we hear from states and counties:
+VxMail may include additional components based on the needs we hear from local election officials:
 
 * an online absentee ballot request system to let voters request an absentee ballot.
-* a mail-and-SMS-based signature cure process, where invalid signatures can be remedied efficiently.
+* a multi-channel signature cure process, where invalid signatures can be remedied efficiently.
 
 ## Cost
 
