@@ -100,7 +100,7 @@ and ballots are extracted manually.
 
 Extracted ballots are tabulated via the Ballot Tabulator, which
 includes a physical scanner and an accompanying laptop. Three scanner
-models are available depending on the county size:
+models are available depending on the jurisdiction size:
 
 * small: up to 10,000 ballot pages per day, in batches of 50, each batch taking 1 minute to scan.
 * medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
