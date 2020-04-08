@@ -35,7 +35,7 @@ VxMail includes:
 
 The Ballot Manager works online for connecting with print-and-mail
 services, and potentially to the state's Election Management
-System. The Ballot Scanner is offline for security purposes.
+System. The Ballot Tabulator is offline for security purposes.
 
 ### Printing and mailing ballots
 
@@ -45,7 +45,7 @@ The VxMail Ballot Manager lets an election official:
 * upload the voter mailing list
 * proof generated ballots on screen
 * order those ballots printed and mailed, with a 3-day in-USPS-hands SLA
-* track ballot delivery to voters.
+* track ballot delivery to voters
 * track ballot return from voters.
 
 All ballot printing, stuffing, and mailing is managed by VotingWorks
@@ -61,7 +61,7 @@ envelope signatures using the VxMail Ballot Manager, which includes an
 envelope scanner:
 
 * An export of voter IDs and signatures, provided by the state, is
-  loaded into the VxMail Ballot Manager
+  loaded into the VxMail Ballot Manager.
 * Ballot envelopes are scanned into the Ballot Manager in small
   batches. On screen, expected and actual signatures are displayed for
   confirmation by election officials. If election officials detect any
@@ -73,7 +73,7 @@ envelope scanner:
 * When all ballots have been scanned, the VxMail Ballot Manager
   produces an export of successful and unsuccessful voter IDs,
   including digital images for both sides of the corresponding ballot
-  envelopes. These can then be upload into the state voter management
+  envelopes. These can then be uploaded into the state voter management
   system to record that those voters have cast a ballot.
   
 If the integration with the state's voter IDs and signature files is
@@ -92,7 +92,7 @@ affordable automatic letter opener.
 
 ### Scanning and tabulating ballots
 
-Extracted ballots are tabulated via the VxMail Tabulator, which
+Extracted ballots are tabulated via the Ballot Tabulator, which
 includes a physical scanner and an accompanying laptop. Three scanner
 models are available depending on the county size:
 
