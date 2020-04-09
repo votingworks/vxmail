@@ -21,7 +21,6 @@ By offering simple, readily available, off-the-shelf hardware and
 robust software, we can enable 3 election staffers to manage mailing
 and receiving 50,000 ballots.
 
-
 ## VxMail
 
 We propose VxMail, a set of tools to help small jurisdictions quickly scale
@@ -81,7 +80,7 @@ envelope scanner:
   of the corresponding ballot envelopes. These can then be uploaded
   into the state voter management system to record that those voters
   have cast a ballot.
-  
+
 If integration with the state's Election Management System is not an
 option, election officials may instead use their existing Election
 Management System and look up voter records as ballot envelopes come
@@ -117,11 +116,9 @@ voters who have cast a ballot, which can then be reconciled against
 the state voter registration system to flag any voter that may have
 cast a ballot both in person and by mail. Election officials have a
 choice of two options:
-
 - connecting the VxMail Ballot Manager to the State Election
   Management System for live information on which voters have alreay
   voted.
-  
 - reconciling the VxMail Ballot Manager received-ballot list with the
   Election Management System on a nightly basis, leaving ballot
   envelopes unopened until the next day once those voters have been
