@@ -39,7 +39,7 @@ The Ballot Manager works online for connecting with print-and-mail
 services, and potentially to the state's Election Management
 System. The Ballot Tabulator is offline for security purposes.
 
-### Printing and mailing ballots
+### Proofing, Printing, and Mailing Ballots
 
 The VxMail Ballot Manager lets an election official:
 
@@ -56,7 +56,7 @@ the Ballot Manager. Voters receives a ballot and return envelope,
 including, as per best practices, a clear location to sign printed on
 the return envelope.
 
-### Verifying voter signatures
+### Verifying Voter Signatures
 
 When ballots are received, election officials can verify ballot
 envelope signatures using the VxMail Ballot Manager, which includes an
@@ -87,7 +87,7 @@ Management System and look up voter records as ballot envelopes come
 in, either by scanning a voter ID barcode that appears on the ballot
 return envelope, or by manually looking up the voter record.
 
-### Opening envelopes and extracting ballots
+### Opening Envelopes and Extracting Ballots
 
 For larger jurisdictions, VxMail includes an off-the-shelf automatic
 envelope opener and letter extractor, reducing the personnel needed
@@ -95,7 +95,7 @@ for opening envelopes and extracting ballots. For smaller
 jurisdictions, VxMail includes an affordable automatic letter opener,
 and ballots are extracted manually.
 
-### Scanning and tabulating ballots
+### Scanning and Tabulating Ballots
 
 Extracted ballots are tabulated via the Ballot Tabulator, which
 includes a physical scanner and an accompanying laptop. Three scanner
