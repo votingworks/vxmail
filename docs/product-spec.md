@@ -29,11 +29,11 @@ up their vote-by-mail capacity.
 ### Components
 
 VxMail includes:
-* a Ballot Manager to create and proof mail ballots, schedule printing
+- a Ballot Manager to create and proof mail ballots, schedule printing
   and mailing, log receipt of returned ballots, and verify voter
   signatures.
-* tools to efficiently open envelopes and extract ballots.
-* a Ballot Tabulator to scan and tabulate ballots.
+- tools to efficiently open envelopes and extract ballots.
+- a Ballot Tabulator to scan and tabulate ballots.
 
 The Ballot Manager works online for connecting with print-and-mail
 services, and potentially to the state's Election Management
@@ -43,12 +43,12 @@ System. The Ballot Tabulator is offline for security purposes.
 
 The VxMail Ballot Manager lets an election official:
 
-* upload the election definition
-* proof generated ballots on screen
-* upload the voter mailing list (name, mailing address, voter ID, ballot style)
-* order those ballots printed and mailed, with a 3-day mailing turnaround.
-* track ballot delivery to voters
-* track ballot return from voters
+- upload the election definition
+- proof generated ballots on screen
+- upload the voter mailing list (name, mailing address, voter ID, ballot style)
+- order those ballots printed and mailed, with a 3-day mailing turnaround.
+- track ballot delivery to voters
+- track ballot return from voters
 
 All ballot printing, stuffing, and mailing is managed by VotingWorks
 and its partners, while election officials can track that process via
@@ -62,10 +62,10 @@ When ballots are received, election officials can verify ballot
 envelope signatures using the VxMail Ballot Manager, which includes an
 envelope scanner:
 
-* An export of voter IDs and signatures, provided by the state, is
+- An export of voter IDs and signatures, provided by the state, is
   loaded into the VxMail Ballot Manager prior to the election and
   updated as necessary.
-* Ballot envelopes are scanned into the Ballot Manager in small
+- Ballot envelopes are scanned into the Ballot Manager in small
   batches. On screen, expected and actual signatures are displayed for
   confirmation by election officials. If election officials detect any
   mismatch on screen, they indicate this with a single tap on the
@@ -74,7 +74,7 @@ envelope scanner:
   digitally that this envelope was rejected. Scanning ballot envelopes
   continues, one small batch at a time, and rejected envelopes can be
   further adjudicated as necessary.
-* When all ballots have been scanned, the VxMail Ballot Manager
+- When all ballots have been scanned, the VxMail Ballot Manager
   produces an export of all ballots received, along with accepted and
   rejected voter signatures, including digital images for both sides
   of the corresponding ballot envelopes. These can then be uploaded
@@ -101,9 +101,9 @@ Extracted ballots are tabulated via the Ballot Tabulator, which
 includes a physical scanner and an accompanying laptop. Three scanner
 models are available depending on the jurisdiction size:
 
-* small: up to 10,000 ballot pages per day, in batches of 50, each batch taking 1 minute to scan.
-* medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
-* large: up to 120,000 ballot pages per day, in batches of 500, each batch taking 3.5 minutes to scan.
+- small: up to 10,000 ballot pages per day, in batches of 50, each batch taking 1 minute to scan.
+- medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
+- large: up to 120,000 ballot pages per day, in batches of 500, each batch taking 3.5 minutes to scan.
 
 The VxMail Tabulator produces a set of cast vote records (CVRs) and a
 tally of those CVRs.
@@ -128,15 +128,15 @@ choice of two options:
 
 VxMail may include additional components based on the needs we hear from local election officials:
 
-* an online absentee ballot request system to let voters request an absentee ballot.
-* a multi-channel signature cure process, where invalid signatures can be remedied efficiently.
+- an online absentee ballot request system to let voters request an absentee ballot.
+- a multi-channel signature cure process, where invalid signatures can be remedied efficiently.
 
 ## Cost
 
 Our rough estimate of complete equipment system cost is:
 
-* Small: $3,500
-* Medium: $7,000
-* Large: $15,000
+- Small: $3,500
+- Medium: $7,000
+- Large: $15,000
 
 Plus, for ballot printing and mailing: $2.00 per voter, *including return postage*.
