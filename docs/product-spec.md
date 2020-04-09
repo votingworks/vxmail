@@ -29,15 +29,15 @@ up their vote-by-mail capacity.
 ### Components
 
 VxMail includes:
-- a Ballot Manager to create and proof mail ballots, schedule printing
-  and mailing, log receipt of returned ballots, and verify voter
+- VxMail Ballot Manager is used to create and proof mail ballots, schedule
+  printing and mailing, log receipt of returned ballots, and verify voter
   signatures.
-- tools to efficiently open envelopes and extract ballots.
-- a Ballot Tabulator to scan and tabulate ballots.
+- hardware to efficiently open envelopes and extract ballots.
+- VxMail Ballot Tabulator is used to scan and tabulate ballots.
 
-The Ballot Manager works online for connecting with print-and-mail
+VxMail Ballot Manager works online for connecting with print-and-mail
 services, and potentially to the state's Election Management
-System. The Ballot Tabulator is offline for security purposes.
+System. VxMail Ballot Tabulator is offline for security purposes.
 
 ### Proofing, Printing, and Mailing Ballots
 
@@ -52,7 +52,7 @@ The VxMail Ballot Manager lets an election official:
 
 All ballot printing, stuffing, and mailing is managed by VotingWorks
 and its partners, while election officials can track that process via
-the Ballot Manager. Voters receives a ballot and return envelope,
+the VxMail Ballot Manager. Voters receives a ballot and return envelope,
 including, as per best practices, a clear location to sign printed on
 the return envelope.
 
@@ -65,7 +65,7 @@ envelope scanner:
 - An export of voter IDs and signatures, provided by the state, is
   loaded into the VxMail Ballot Manager prior to the election and
   updated as necessary.
-- Ballot envelopes are scanned into the Ballot Manager in small
+- Ballot envelopes are scanned into the VxMail Ballot Manager in small
   batches. On screen, expected and actual signatures are displayed for
   confirmation by election officials. If election officials detect any
   mismatch on screen, they indicate this with a single tap on the
@@ -97,7 +97,7 @@ and ballots are extracted manually.
 
 ### Scanning and Tabulating Ballots
 
-Extracted ballots are tabulated via the Ballot Tabulator, which
+Extracted ballots are tabulated via the VxMail Ballot Tabulator, which
 includes a physical scanner and an accompanying laptop. Three scanner
 models are available depending on the jurisdiction size:
 
@@ -105,7 +105,7 @@ models are available depending on the jurisdiction size:
 - medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
 - large: up to 120,000 ballot pages per day, in batches of 500, each batch taking 3.5 minutes to scan.
 
-The VxMail Tabulator produces a set of cast vote records (CVRs) and a
+The VxMail Ballot Tabulator produces a set of cast vote records (CVRs) and a
 tally of those CVRs.
 
 ### Ballot Reconciliation
