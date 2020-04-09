@@ -26,18 +26,19 @@ and receiving 50,000 ballots.
 We propose VxMail, a set of tools to help small jurisdictions quickly scale
 up their vote-by-mail capacity.
 
-### Components
+VxMail includes the following components:
 
-VxMail includes:
-- VxMail Ballot Manager is used to create and proof mail ballots, schedule
+- **VxMail Ballot Manager** is used to create and proof ballots, schedule
   printing and mailing, log receipt of returned ballots, and verify voter
   signatures.
 - hardware to efficiently open envelopes and extract ballots.
-- VxMail Ballot Tabulator is used to scan and tabulate ballots.
+- **VxMail Ballot Tabulator** is used to scan and tabulate ballots.
 
 VxMail Ballot Manager works online for connecting with print-and-mail
 services, and potentially to the state's Election Management
 System. VxMail Ballot Tabulator is offline for security purposes.
+
+The step-by-step process of using VxMail is as follows (with possible adaptations for the laws of local jurisdictions)…
 
 ### Proofing, Printing, and Mailing Ballots
 
@@ -50,9 +51,9 @@ The VxMail Ballot Manager lets an election official:
 - track ballot delivery to voters
 - track ballot return from voters
 
-All ballot printing, stuffing, and mailing is managed by VotingWorks
-and its partners, while election officials can track that process via
-the VxMail Ballot Manager. Voters receives a ballot and return envelope,
+All ballot printing and mailing is managed by VotingWorks
+and its partners. Election officials can track this process via
+the VxMail Ballot Manager. Voters receive a ballot and return envelope,
 including, as per best practices, a clear location to sign printed on
 the return envelope.
 
@@ -91,9 +92,9 @@ return envelope, or by manually looking up the voter record.
 
 For larger jurisdictions, VxMail includes an off-the-shelf automatic
 envelope opener and letter extractor, reducing the personnel needed
-for opening envelopes and extracting ballots. For smaller
-jurisdictions, VxMail includes an affordable automatic letter opener,
-and ballots are extracted manually.
+for opening envelopes and extracting ballots. For smaller jurisdictions,
+VxMail includes an affordable automatic letter opener, and ballots are
+extracted manually.
 
 ### Scanning and Tabulating Ballots
 
@@ -116,10 +117,9 @@ voters who have cast a ballot, which can then be reconciled against
 the state voter registration system to flag any voter that may have
 cast a ballot both in person and by mail. Election officials have a
 choice of two options:
-- connecting the VxMail Ballot Manager to the State Election
-  Management System for live information on which voters have alreay
-  voted.
-- reconciling the VxMail Ballot Manager received-ballot list with the
+- connecting the VxMail Ballot Manager to the State Election Management
+  System for live information on which voters have already voted.
+- reconciling the VxMail Ballot Manager list of received ballots with the
   Election Management System on a nightly basis, leaving ballot
   envelopes unopened until the next day once those voters have been
   confirmed not to have voted by other means.
