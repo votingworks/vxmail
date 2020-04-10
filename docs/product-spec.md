@@ -28,21 +28,21 @@ up their vote-by-mail capacity.
 
 VxMail includes the following components:
 
-- **VxMail Ballot Manager** is used to create and proof ballots, schedule
+- The Ballot Manager is used to create and proof ballots, schedule
   printing and mailing, log receipt of returned ballots, and verify voter
   signatures.
 - hardware to efficiently open envelopes and extract ballots.
-- **VxMail Ballot Tabulator** is used to scan and tabulate ballots.
+- The Ballot Tabulator is used to scan and tabulate ballots.
 
-VxMail Ballot Manager works online for connecting with print-and-mail
+The Ballot Manager works online for connecting with print-and-mail
 services, and potentially to the state's Election Management
-System. VxMail Ballot Tabulator is offline for security purposes.
+System. The Ballot Tabulator is offline for security purposes.
 
 The step-by-step process of using VxMail is as follows (with possible adaptations for the laws of local jurisdictions)…
 
 ### Proofing, Printing, and Mailing Ballots
 
-The VxMail Ballot Manager lets an election official:
+The Ballot Manager lets an election official:
 
 - upload the election definition
 - proof generated ballots on screen
@@ -53,29 +53,29 @@ The VxMail Ballot Manager lets an election official:
 
 All ballot printing and mailing is managed by VotingWorks
 and its partners. Election officials can track this process via
-the VxMail Ballot Manager. Voters receive a ballot and return envelope,
+the Ballot Manager. Voters receive a ballot and return envelope,
 including, as per best practices, a clear location to sign printed on
 the return envelope.
 
 ### Verifying Voter Signatures
 
 When ballots are received, election officials can verify ballot
-envelope signatures using the VxMail Ballot Manager, which includes an
+envelope signatures using the Ballot Manager, which includes an
 envelope scanner:
 
 - An export of voter IDs and signatures, provided by the state, is
-  loaded into the VxMail Ballot Manager prior to the election and
+  loaded into the Ballot Manager prior to the election and
   updated as necessary.
-- Ballot envelopes are scanned into the VxMail Ballot Manager in small
+- Ballot envelopes are scanned into the Ballot Manager in small
   batches. On screen, expected and actual signatures are displayed for
   confirmation by election officials. If election officials detect any
   mismatch on screen, they indicate this with a single tap on the
   corresponding button, and the scanning process pauses while election
-  officials locate and set aside that ballot envelope. VxMail records
+  officials locate and set aside that ballot envelope. The Ballot Manager records
   digitally that this envelope was rejected. Scanning ballot envelopes
   continues, one small batch at a time, and rejected envelopes can be
   further adjudicated as necessary.
-- When all ballots have been scanned, the VxMail Ballot Manager
+- When all ballots have been scanned, the Ballot Manager
   produces an export of all ballots received, along with accepted and
   rejected voter signatures, including digital images for both sides
   of the corresponding ballot envelopes. These can then be uploaded
@@ -98,7 +98,7 @@ extracted manually.
 
 ### Scanning and Tabulating Ballots
 
-Extracted ballots are tabulated via the VxMail Ballot Tabulator, which
+Extracted ballots are tabulated via the Ballot Tabulator, which
 includes a physical scanner and an accompanying laptop. Three scanner
 models are available depending on the jurisdiction size:
 
@@ -106,20 +106,20 @@ models are available depending on the jurisdiction size:
 - medium: up to 45,000 ballot pages per day, in batches of 300, each batch taking 3 minutes to scan.
 - large: up to 120,000 ballot pages per day, in batches of 500, each batch taking 3.5 minutes to scan.
 
-The VxMail Ballot Tabulator produces a set of cast vote records (CVRs) and a
+The Ballot Tabulator produces a set of cast vote records (CVRs) and a
 tally of those CVRs.
 
 ### Ballot Reconciliation
 
 Election officials can use VxMail to ensure that each voter casts no
-more than one ballot. The VxMail Ballot Manager tracks the list of
+more than one ballot. The Ballot Manager tracks the list of
 voters who have cast a ballot, which can then be reconciled against
 the state voter registration system to flag any voter that may have
 cast a ballot both in person and by mail. Election officials have a
 choice of two options:
-- connecting the VxMail Ballot Manager to the State Election Management
+- connecting the Ballot Manager to the State Election Management
   System for live information on which voters have already voted.
-- reconciling the VxMail Ballot Manager list of received ballots with the
+- reconciling the Ballot Manager's list of received ballots with the
   Election Management System on a nightly basis, leaving ballot
   envelopes unopened until the next day once those voters have been
   confirmed not to have voted by other means.
