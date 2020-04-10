@@ -51,7 +51,7 @@ The Ballot Manager lets an election official:
 - track ballot delivery to voters
 - track ballot return from voters
 
-All ballot printing and mailing is managed by VotingWorks
+All ballot printing, stuffing, and mailing is managed by VotingWorks
 and its partners. Election officials can track this process via
 the Ballot Manager. Voters receive a ballot and return envelope,
 including, as per best practices, a clear location to sign printed on
